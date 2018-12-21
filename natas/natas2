@@ -1,0 +1,7 @@
+# Inspect element look at comment in content div
+# http://natas2.natas.labs.overthewire.org/
+
+put '/files/' into url
+click users.txt
+
+> sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14

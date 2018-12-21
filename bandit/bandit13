@@ -1,0 +1,5 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+ssh -i sshkey.private bandit14@localhost
+
+Crl-D

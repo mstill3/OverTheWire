@@ -1,0 +1,9 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+
+cat /etc/bandit_pass/bandit15
+openssl s_client -ign_eof -connect localhost:30001
+> cluFn7wTiGryunymYOu4RcffSxQluehd
+
+
+Crl-D

@@ -1,0 +1,17 @@
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+
+cd inhere
+
+# Recursivly list all files in long form
+ls -Rla | grep 1033
+
+# or
+
+# Finds files that are size 1033 bytes long
+find inhere/ -size 1033c
+
+cd maybehere07
+cat ./.file2
+> DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Crl-D

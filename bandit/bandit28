@@ -1,0 +1,17 @@
+ssh bandit28@bandit.labs.overthewire.org -p 2220
+
+mkdir /tmp/matt5
+cd /tmp/matt5
+
+cat /etc/bandit_pass/bandit28
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+
+cd repo
+cat README
+
+git log
+git checkout 186a1038cc54d1358d42d468cdc8e3cc28a93fcb
+
+cat README
+
+> bbc96594b4e001778eee9975372716b2

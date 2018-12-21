@@ -1,0 +1,8 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+
+ssh -t bandit18@localhost /bin/sh
+cat readme
+> IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+Crl-D

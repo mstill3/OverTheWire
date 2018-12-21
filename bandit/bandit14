@@ -1,0 +1,9 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+cat /etc/bandit_pass/bandit14
+> 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+cat /etc/bandit_pass/bandit14 | nc localhost 30000
+> BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+Crl-D

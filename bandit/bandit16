@@ -1,0 +1,23 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+
+cat /etc/bandit_pass/bandit16
+
+# Scan network ports in range 31000 to 32000
+nmap -p 31000-32000 localhost
+
+# connect to port 31518 with ssl
+openssl s_client -ign_eof -connect localhost:31518
+openssl s_client -ign_eof -connect localhost:31790
+ 
+# Copy RSA key to localdrive named bandit17-sshkey
+# On localdrive make private access to file 
+chmod 600 bandit17-sshkey
+
+> ssh -i bandit17-sshkey bandit17@bandit.labs.overthewire.org -p 2220
+
+
+cat /etc/bandit_pass/bandit17
+> xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+Crl-D

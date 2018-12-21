@@ -1,0 +1,18 @@
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+
+mkdir /tmp/matt6
+cd /tmp/matt6
+
+cat /etc/bandit_pass/bandit29
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+
+cd repo
+cat README
+
+git branch -r
+git checkouti -b origin/dev
+
+
+cat README
+
+> 5b90576bedb2cc04c86a9e924ce42faf

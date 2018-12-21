@@ -1,0 +1,18 @@
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+
+# Check ports already used
+nmap localhost
+
+# Get current password
+cat /etc/bandit_pass/bandit20
+
+# Print current password when someone connects to network daemon on port 6000
+echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 60000
+
+# Reconnect to bandit20 in another terminal
+# Connect to port 60000
+./suconnect 60000
+
+> gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr 
+
+Crl-D

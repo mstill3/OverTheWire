@@ -1,0 +1,5 @@
+ssh bandit26@bandit.labs.overthewire.org -p 2220
+
+# see bandit25 for details
+
+> 3ba3118a22e93127a4ed485be72ef5ea 

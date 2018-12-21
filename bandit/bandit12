@@ -1,0 +1,20 @@
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+mkdir /tmp/matt
+cp data.txt /tmp/matt
+xxd -r data.txt > datarev
+file datarev
+
+# gzip
+mv datarev datarev.gz
+gunzip -r datarev.gz
+
+# bzip3
+bzip2 -d datarev
+
+# tar
+tar xvf rev
+
+> 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Crl-D

@@ -1,0 +1,17 @@
+ssh bandit31@bandit.labs.overthewire.org -p 2220
+
+mkdir /tmp/matt8
+cd /tmp/matt8
+
+cat /etc/bandit_pass/bandit31
+git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+
+rm .gitignore
+touch key.txt
+
+git add key.txt
+git add .gitignore
+git commit -m "Unhide"
+git push
+
+> 56a9bf19c63d650ce78e6ec0354ee45e
