@@ -1,0 +1,9 @@
+# http://natas6.natas.labs.overthewire.org/
+
+# look at source code
+# password hidden in php code found in includes/secret.inc
+# add '/includes/secret.inc' onto end of url
+# check debugger and click on secret.inc
+# secret = "FOEIUWGHFEEUHOFUOIU"
+
+> 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9

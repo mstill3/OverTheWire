@@ -1,0 +1,17 @@
+# http://natas4.natas.labs.overthewire.org/
+
+# open web console
+
+# to print out current url
+location.href
+
+# reload and change current url
+location.href = "http://natas5.natas.labs.overthewire.org"
+
+# reload natas4
+location.href = "http://natas4.natas.labs.overthewire.org"
+
+# shows where it came from
+document.referrer
+
+> iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq 

@@ -1,0 +1,9 @@
+# http://natas4.natas.labs.overthewire.org/
+
+# open web storage for cookies
+# click on loggedin cookie
+# change value to 1 for true
+# reload and tada!
+
+> aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+

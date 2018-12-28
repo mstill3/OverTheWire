@@ -1,0 +1,9 @@
+# http://natas7.natas.labs.overthewire.org/
+
+# look at source code
+# find hintL password is in /etc/natas_webpass/natas8
+# click on Home link
+# change ending of url from page=home to page=/etc/natas_webpass/natas8
+
+> DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
