@@ -1,0 +1,6 @@
+# Base 64 -> Plaintext
+# S1JZUFRPTklTR1JFQVQ=
+
+echo "S1JZUFRPTklTR1JFQVQ=" | base64 --decode
+
+> KRYPTONISGREAT
