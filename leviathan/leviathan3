@@ -1,0 +1,12 @@
+# ssh leviathan3@leviathan.labs.overthewire.org -p 2223
+
+ltrace ./level3
+# enter hi
+# see strcmp("hi", "snlprintf")
+
+./level3
+# enter snlprintf
+
+cat /lev*/leviathan4
+
+> vuH0coox6m

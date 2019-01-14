@@ -1,0 +1,15 @@
+# ssh leviathan4@leviathan.labs.overthewire.org -p 2223
+
+ls -la
+cd .trash
+
+ltrace ./bin
+
+# take binary answer, remove spaces and use perl to get hex 
+./bin | tr -d " " | perl -lpe '$_=pack"B*",$_'
+
+or 
+
+# put string into binary to ascii converter
+
+> Tith4cokei

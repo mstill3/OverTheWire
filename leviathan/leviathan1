@@ -1,0 +1,14 @@
+# ssh leviathan1@leviathan.labs.overthewire.org -p 2223
+
+ltrace ./check
+# enter hi as possword
+# see strcp("hel", "sex")
+
+./check
+# enter sex
+
+# in elevated prompt
+cat /etc/leviathan_pass/leviathan2
+
+
+> ougahZi8Ta

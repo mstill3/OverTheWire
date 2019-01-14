@@ -1,0 +1,7 @@
+# ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+# leviathian0
+
+cd .backup
+cat bookmarks.html | grep password
+
+> rioGegei8m

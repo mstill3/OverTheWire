@@ -1,0 +1,11 @@
+# ssh leviathan6@leviathan.labs.overthewire.org -p 2223
+
+for i in $(seq 0000 9999); do echo $i && ./leviathan6 $i;  done;
+
+
+whoami
+# leviathan7
+
+cat /etc/levi*/leviathan7
+
+> ahy7MaeBo9 

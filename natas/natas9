@@ -1,8 +1,7 @@
-# http://natas8.natas.labs.overthewire.org/
+# http://natas9.natas.labs.overthewire.org/
 
-# look at encodeSecret and reverse the functions donw on it
-echo 3d3d516343746d4d6d6c315669563362 | xxd -r -p | rev | base64 -d
-# secret is oubWYf2kBq
+# enter 'a; cat /etc/natas_webpass/natas10 #'
+# the input is not sanitized so it searches for a then cats the password and then comments the call to the dictionary
 
-> W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+> nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
 

