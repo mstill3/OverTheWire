@@ -2,6 +2,29 @@ ssh krypton2@krypton.labs.overthewire.org -p 2222
 
 cd /krypton/krypton2/
 
+# Another ceasar cipher
+mkdir /tmp/mattt
+cd /tmp/matt/
+
+ln -s /krypton/krypton2/encrypt enc
+ln -s /krypton/krypton2/keyfile.dat
+echo "abcxyzABCXYZ" > input
+./enc input
+cat ciphertext
+
+# abcxyzABCXYZ -> MNOJKLMNOJKL
+ln -s /krypton/krypton2/krypton3
+cat krypton3
+# OMQEMDUEQMEK
 
 
-> 
+cat krypton3 | tr '[M-ZA-N]' '[A-Z]'
+#C]ES]RISE]SY
+# Change ] to A
+
+# or
+
+./ceasar.py --input "OMQEMDUEQMEK" --num 14
+
+
+> CAESARISEASY

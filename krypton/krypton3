@@ -1,0 +1,18 @@
+ssh krypton3@krypton.labs.overthewire.org -p 2222 
+
+cd /krypton/krypton3/
+
+mkdir /tmp/m3/
+cd /tmp/m3/
+
+cat /krypton/krypton3/krypton4 > foundall
+echo "******" >> foundall
+cat /krypton/krypton3/found1 >> foundall
+cat /krypton/krypton3/found2 >> foundall
+cat /krypton/krypton3/found3 >> foundall
+cat foundall
+
+# put output into quipqiup website
+# WELL DONE THE LEVEL FOUR PASSWORD IS BRUTE
+
+> BRUTE

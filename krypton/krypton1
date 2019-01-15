@@ -9,10 +9,11 @@ cat krypton2
 # Assuming the second word is THE and the third is PASSWORD
 # Its G-T -> 7-20 = 13
 
-# combine parts or both to get
-./ceasar.py --input "YRIRY GJB CNFFJBEQ EBGGRA" --num -13
+echo 'YRIRY GJB CNFFJBEQ EBGGRA' | tr '[A-Z]' '[N-ZA-M]'
+
+# or
+
 ./ceasar.py --input "YRIRY GJB CNFFJBEQ EBGGRA" --num 13
 
-# LEVEL-TWO-PASSWORD-ROTTEN
-
+# LEVEL TWO PASSWORD ROTTEN
 > ROTTEN

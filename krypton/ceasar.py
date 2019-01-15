@@ -5,19 +5,21 @@ import argparse
 def letters_to_nums(letters):
     nums = []
     for l in letters:
-        nums.append(ord(l))
+        nums.append(ord(l) - 97)
     return nums
 
 
 def nums_to_letters(nums):
     letters = []
     for n in nums:
-        letters.append(chr(n))
+        if(n != -51):
+            n = n % 26
+        letters.append(chr(n + 97))
     return letters
 
 
 def shuffle(nums, amount):
-    return [n+amount for n in nums]   
+    return [(n + amount) for n in nums]   
 
 
 def main():
@@ -34,6 +36,9 @@ def main():
     ciphertext = args["input"]
     shift = args["num"]
 
+    # to uppercase
+    ciphertext = ciphertext.lower()
+
     # string to char array    
     arr = list(ciphertext)
     #print(arr)
@@ -42,8 +47,10 @@ def main():
     nums = letters_to_nums(arr)
     #print(nums)
 
+    # shuffled
     nums = shuffle(nums, shift)
-    
+    #print(nums)
+
     # num array to char array
     letters = nums_to_letters(nums)
     #print(letters)

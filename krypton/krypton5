@@ -1,0 +1,21 @@
+ssh krypton5@krypton.labs.overthewire.org -p 2222 
+
+cd /krypton/krypton5/
+
+# Vigenere keylength unknown
+# This will not be perfect as the found text can end before multiple of keylength reached
+mkdir /tmp/m5/
+cat found1 > /tmp/m5/foundall
+cat found2 >> /tmp/m5/foundall
+cat found3 >> /tmp/m5/foundall
+cat /tmp/m5/foundall
+
+# put output onto https://www.dcode.fr/vigenere-cipher and anyalze for key length
+# most probably 9 from plugging in each found
+# key is KEYLENGTH
+
+cat krypton6
+# BELOS Z
+# plug into http://f00l.de/hacking/vigenere.php plug in keylength as key
+
+> RANDOM

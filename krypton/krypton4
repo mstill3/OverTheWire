@@ -1,0 +1,13 @@
+ssh krypton4@krypton.labs.overthewire.org -p 2222 
+
+cd /krypton/krypton4/
+
+cat found1
+# put output on http://f00l.de/hacking/vigenere.php website
+# set key size to 6 and decode key
+# key is: frekey
+
+cat krypton5
+# put output (HCIKV RJOX) on http://f00l.de/hacking/vigenere.php website
+
+> CLEARTEXT
