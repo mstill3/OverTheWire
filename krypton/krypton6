@@ -2,6 +2,20 @@ ssh krypton6@krypton.labs.overthewire.org -p 2222
 
 cd /krypton/krypton6/
 
+mkdir /tmp/matt
+python -c "print 'A' * 100" > /tmp/matt/input
+touch /tmp/matt/output
+
+./encrypt6 /tmp/matt/input /tmp/matt/output
+cat /tmp/matt/output
+
+# EICTDGYIYZKTHNSIRFXYCPFUEOCKRN EICTDGYIYZKTHNSIRFXYCPFUEOCKRN EICTDGYIYZKTHNSIRFXYCPFUEOCKRN EICTDGYIYZ
+# The key repeats every 30 characters
+
+cat krypton7
+# PNUKLYLWRQKGKBE
 
 
-> 
+./vigenere.py --input "PNUKLYLWRQKGKBE" --key "EICTDGYIYZKTHNSIRFXYCPFUEOCKRN"
+
+> ISNOTRANDOM
